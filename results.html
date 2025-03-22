@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Visualization Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .graph-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Climate Visualization Results</h1>
+        <h2>Average Temperature</h2>
+        <div class="graph-container">
+            <!-- Replace this with your graph image -->
+            <img src="{{ url_for('static', filename='avg_temp_plot.png') }}" alt="Average Temperature Graph">
+        </div>
+        <h2>Minimum Temperature</h2>
+        <div class="graph-container">
+            <!-- Replace this with your graph image -->
+            <img src="{{ url_for('static', filename='min_temp_plot.png') }}" alt="Minimum Temperature">
+        </div>
+        <h2>Maximum Temperature</h2>
+        <div class="graph-container">
+            <!-- Replace this with your graph image -->
+            <img src="{{ url_for('static', filename='max_temp_plot.png') }}" alt="Maximum Temperature">
+        </div>
+        <h2>Predicted Average Temperature</h2>
+        <div class="graph-container">
+            <!-- Replace this with your graph image -->
+            <img src="{{ url_for('static', filename='predicted_temp_plot.png') }}" alt="Predicted Average Temperature">
+        </div>
+        <h2>Precipitation</h2>
+        <div class="graph-container">
+            <!-- Replace this with your graph image -->
+            <img src="{{ url_for('static', filename='precipitation_plot.png') }}" alt="Precipitation">
+        </div>
+    </div>
+
+    <footer>
+        Climate Analytics Tool | Hackathon Project | March 2025
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
